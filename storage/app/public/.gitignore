@@ -1,0 +1,10 @@
+
+!.gitignore
+/album-media/
+/albums/
+/films/
+/pages/
+/posts/
+/products/
+/settings/
+/users/
