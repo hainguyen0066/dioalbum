@@ -14,16 +14,14 @@ class AboutController extends Controller
      */
     public function index(Request $request)
     {
-//        if($request->has('sent-mail')){
-//            dd('sent-mail success');
-//            return  view('pages.about');
-//        }
+
         $data = [
             'aboutTitle'        => setting('aboutpages.about_title'),
             'aboutDescription'  => setting('aboutpages.about_description'),
             'aboutImage'        => setting('aboutpages.about_image'),
             'aboutBgImage'      => setting('aboutpages.about_bg_image')
         ];
+
         return  view('pages.about',$data);
     }
 

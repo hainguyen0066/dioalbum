@@ -31,6 +31,7 @@ class HomeController extends Controller
         $data = [
             'albumMedias' => $albumMedias,
         ];
+
         return  view('pages.home', $data);
     }
 

@@ -30,6 +30,7 @@ class ContactController extends Controller
             'instagram'     => setting('contacts.contacts_insta'),
             'map'           => setting('contacts.contacts_map')
         ];
+
         return view('pages.contact',$data);
     }
 
