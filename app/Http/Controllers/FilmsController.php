@@ -16,7 +16,7 @@ class FilmsController extends Controller
     public function index()
     {
         $filmMedias =  Film::select('*')
-                            ->orderBy('order')
+                            ->orderBy('order','DESC')
                             ->get();
         $filmMedias = $filmMedias->map(function ($item) use ($filmMedias) {
 
@@ -25,6 +25,8 @@ class FilmsController extends Controller
 
             return $item;
         });
+        $tags = $filmMedias->pluck('tag')->unique();
+
         $data = [
             'filmMedias' => $filmMedias,
         ];

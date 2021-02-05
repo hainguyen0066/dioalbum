@@ -18,7 +18,7 @@ class PhotographyController extends Controller
     {
         $albums = Album::select('*')
             ->has('album_media')
-            ->orderBy('order')
+            ->orderBy('order','DESC')
             ->get();
 
         $albums = $albums->map(function ($album) {
@@ -27,6 +27,7 @@ class PhotographyController extends Controller
             return $album;
         });
         $tags = $albums->pluck('tag')->unique();
+
         $data = [
             'albums' => $albums,
             'tags' => $tags,
@@ -77,6 +78,7 @@ class PhotographyController extends Controller
         $data = [
             'AlbumMedia' => $AlbumMedia,
         ];
+
         return view('pages.album', $data);
     }
 

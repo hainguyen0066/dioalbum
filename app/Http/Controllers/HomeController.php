@@ -18,7 +18,7 @@ class HomeController extends Controller
     {
         $albumsId    = array_keys( Album::select('*')->get()->keyBy('id')->toArray());
 
-        $albumMedias = AlbumMedia::whereIn('album_id',$albumsId)->orderBy('order')->limit(10)->get();
+        $albumMedias = AlbumMedia::whereIn('album_id',$albumsId)->orderBy('order','DESC')->limit(10)->get();
         $albumMedias = $albumMedias->map(function ($item) use ($albumMedias) {
 
             $item->name  = $item['name'];
