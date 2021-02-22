@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sorting.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sorting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -158,6 +160,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -180,7 +188,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612406416268</updated>
-      <workItem from="1612406417347" duration="1162000" />
+      <workItem from="1612406417347" duration="1600000" />
+      <workItem from="1612493311918" duration="5320000" />
+      <workItem from="1613982251057" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1612407093013</created>
@@ -196,25 +206,64 @@
       <option name="project" value="LOCAL" />
       <updated>1612407280943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1612407636175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612407636175</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update fix orderby">
+      <created>1612497034749</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612497034749</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update fix index in dashboard voyager">
+      <created>1612497250495</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612497250495</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="update line" />
-    <option name="LAST_COMMIT_MESSAGE" value="update line" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update fix orderby" />
+    <MESSAGE value="update fix index in dashboard voyager" />
+    <option name="LAST_COMMIT_MESSAGE" value="update fix index in dashboard voyager" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="597" y="25" key="CommitChangelistDialog2" timestamp="1612407280538">
+    <state x="448" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613982910070">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state x="597" y="25" key="CommitChangelistDialog2/0.25.1440.790@0.25.1440.790" timestamp="1612407280538" />
+    <state x="448" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.790@0.25.1440.790" timestamp="1613982910070" />
+    <state x="597" y="25" key="CommitChangelistDialog2" timestamp="1612497250087">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="597" y="25" key="CommitChangelistDialog2/0.25.1440.790@0.25.1440.790" timestamp="1612497250087" />
+    <state x="288" y="89" key="DiffContextDialog" timestamp="1612497017966">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="288" y="89" key="DiffContextDialog/0.25.1440.790@0.25.1440.790" timestamp="1612497017966" />
     <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612406662229">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1440.790@0.25.1440.790" timestamp="1612406662229" />
+    <state x="422" y="130" width="595" height="580" key="find.popup" timestamp="1612494488602">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="422" y="130" width="595" height="580" key="find.popup/0.25.1440.790@0.25.1440.790" timestamp="1612494488602" />
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1612498467018">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.25.1440.790@0.25.1440.790" timestamp="1612498467018" />
   </component>
 </project>
