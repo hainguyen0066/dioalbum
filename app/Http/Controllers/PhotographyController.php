@@ -84,20 +84,6 @@ class PhotographyController extends Controller
             }
         }
 
-//        $AlbumMedia = $AlbumMedias->map(function ($AlbumMedia) {
-//
-//            $images = json_decode($AlbumMedia->image);
-//
-//            foreach ($images as $image)
-//            {
-//                $AlbumMedia->image = Voyager::image($image);
-//                $AlbumMedia->thumb = Voyager::image($AlbumMedia->getThumbnail($image, 'small'));
-//
-//            }
-//
-//            return $AlbumMedia;
-//        });
-
         $data = [
             'AlbumMedia' => $data
         ];
