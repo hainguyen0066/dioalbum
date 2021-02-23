@@ -10,7 +10,7 @@
     <script>
         gallery_set = [
                 @foreach($AlbumMedia as $key => $item)
-            {type: "image", image: "{{$item->image}}", thmb: "{{$item->thumb}}", alt: "", title: "{{$item->name}}", description: "", titleColor: "#000000", descriptionColor: "#000000"},
+            {type: "image", image: "{{ $AlbumMedia[$key]['image'] }}", thmb: "{{ $AlbumMedia[$key]['thumb'] }}", alt: "", title: "", description: "", titleColor: "#000000", descriptionColor: "#000000"},
             @endforeach
         ]
         jQuery(document).ready(function(){

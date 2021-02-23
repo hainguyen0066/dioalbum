@@ -66,17 +66,40 @@ class PhotographyController extends Controller
     public function show($id)
     {
         $AlbumMedias = AlbumMedia::where('album_id',$id)->orderBy('id', 'desc')->get();
+        $data = [];
+
         if($AlbumMedias->isEmpty()){
             return redirect('/photography');
         }
-        $AlbumMedia = $AlbumMedias->map(function ($AlbumMedia) {
-            $AlbumMedia->thumb = Voyager::image($AlbumMedia->thumbnail('small', 'image'));
-            $AlbumMedia->image = Voyager::image($AlbumMedia->image);
 
-            return $AlbumMedia;
-        });
+        foreach ($AlbumMedias as $Item)
+        {
+            $images = json_decode($Item->image);
+            $i = 0;
+            foreach ($images as $image)
+            {
+                $data[$i]['image'] = Voyager::image($image);
+                $data[$i]['thumb'] = Voyager::image($Item->getThumbnail($image, 'small'));
+                $i++;
+            }
+        }
+
+//        $AlbumMedia = $AlbumMedias->map(function ($AlbumMedia) {
+//
+//            $images = json_decode($AlbumMedia->image);
+//
+//            foreach ($images as $image)
+//            {
+//                $AlbumMedia->image = Voyager::image($image);
+//                $AlbumMedia->thumb = Voyager::image($AlbumMedia->getThumbnail($image, 'small'));
+//
+//            }
+//
+//            return $AlbumMedia;
+//        });
+
         $data = [
-            'AlbumMedia' => $AlbumMedia,
+            'AlbumMedia' => $data
         ];
 
         return view('pages.album', $data);
