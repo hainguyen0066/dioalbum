@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="commit fix multi image cho Album Meidas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AlbumMedia.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PhotographyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PhotographyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diamond_db_2021-02-04.sql" beforeDir="false" afterPath="$PROJECT_DIR$/diamond_db_2021-02-23.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/album.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/album.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/voyager.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/voyager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diamond_db_2021-02-23.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/partials/app-footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/tcg/voyager/resources/views/partials/app-footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,11 +179,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/resources/views/vendor/voyager/films" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,7 +209,9 @@
       <workItem from="1612406417347" duration="1600000" />
       <workItem from="1612493311918" duration="5320000" />
       <workItem from="1613982251057" duration="6497000" />
-      <workItem from="1614046042497" duration="8973000" />
+      <workItem from="1614046042497" duration="12750000" />
+      <workItem from="1614241765395" duration="4243000" />
+      <workItem from="1614305274938" duration="15507000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1612407093013</created>
@@ -245,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614050319856</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit fix multi image cho Album Meidas">
+      <created>1614055791656</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614055791656</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,25 +289,29 @@
       <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="448" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.790@0.25.1440.790" timestamp="1613982910070" />
-    <state x="492" y="25" key="CommitChangelistDialog2" timestamp="1614055352552">
+    <state x="491" y="25" key="CommitChangelistDialog2" timestamp="1614329361114">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state x="492" y="25" key="CommitChangelistDialog2/0.25.1440.790@0.25.1440.790" timestamp="1614055352552" />
-    <state x="288" y="89" key="DiffContextDialog" timestamp="1614055350669">
+    <state x="491" y="25" key="CommitChangelistDialog2/0.25.1440.790@0.25.1440.790" timestamp="1614329361114" />
+    <state x="0" y="90" width="1438" height="660" key="DiffContextDialog" timestamp="1614329358668">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state x="288" y="89" key="DiffContextDialog/0.25.1440.790@0.25.1440.790" timestamp="1614055350669" />
+    <state x="0" y="90" width="1438" height="660" key="DiffContextDialog/0.25.1440.790@0.25.1440.790" timestamp="1614329358668" />
+    <state x="229" y="56" key="SettingsEditor" timestamp="1614310043886">
+      <screen x="0" y="25" width="1440" height="790" />
+    </state>
+    <state x="229" y="56" key="SettingsEditor/0.25.1440.790@0.25.1440.790" timestamp="1614310043886" />
     <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612406662229">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1440.790@0.25.1440.790" timestamp="1612406662229" />
-    <state x="422" y="130" width="595" height="580" key="find.popup" timestamp="1612494488602">
+    <state x="422" y="130" width="595" height="580" key="find.popup" timestamp="1614325613477">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state x="422" y="130" width="595" height="580" key="find.popup/0.25.1440.790@0.25.1440.790" timestamp="1612494488602" />
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1614055420862">
+    <state x="422" y="130" width="595" height="580" key="find.popup/0.25.1440.790@0.25.1440.790" timestamp="1614325613477" />
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1614329789446">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.25.1440.790@0.25.1440.790" timestamp="1614055420862" />
+    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.25.1440.790@0.25.1440.790" timestamp="1614329789446" />
   </component>
 </project>

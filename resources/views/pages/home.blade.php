@@ -6,7 +6,7 @@
         // Đổ Dữ Liệu Hình Ảnh Ra Ngoài view
         gallery_set = [
                 @foreach($albumMedias as $key => $item)
-            {type: "image", image: "{{ $item->image }}", thmb: "{{ $item->thumb }}", alt: "{{ $item->name }}", title: "{{ $item->name }}", description: "{{ $item->name }}", titleColor: "#ffffff", descriptionColor: "#ffffff",href : '/photography/' + "{{ $item->album_id }}" },
+            {type: "image", image: "{{ $item->image }}", thmb: "{{ $item->thumb }}", alt: "{{ $item->name }}", title: "{{ $item->name }}", description: "{{ $item->name }}", titleColor: "#ffffff", descriptionColor: "#ffffff",href : '/photography/' + "{{ $item->id }}" },
             @endforeach
         ]
 

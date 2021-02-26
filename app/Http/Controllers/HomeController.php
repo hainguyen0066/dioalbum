@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Album;
-use App\AlbumMedia;
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
 
@@ -16,13 +15,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $albumsId    = array_keys( Album::select('*')->get()->keyBy('id')->toArray());
-        $albumMedias = AlbumMedia::whereIn('album_id',$albumsId)->orderBy('order','DESC')->limit(10)->get();
+        $albumMedias = Album::select('*')->orderBy('order','DESC')->limit(10)->get();
 
         $albumMedias = $albumMedias->map(function ($item) use ($albumMedias) {
-
             $item->name  = $item['name'];
-            $image = json_decode($item->image)['0'];
+            $image = json_decode($item->multy_images)['0'];
             $item->image = Voyager::image($image);
             $item->thumb = Voyager::image($item->getThumbnail($image, 'small'));
 

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Album;
-use App\AlbumMedia;
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
 
@@ -17,7 +16,6 @@ class PhotographyController extends Controller
     public function index()
     {
         $albums = Album::select('*')
-            ->has('album_media')
             ->orderBy('order','DESC')
             ->get();
 
@@ -65,7 +63,7 @@ class PhotographyController extends Controller
      */
     public function show($id)
     {
-        $AlbumMedias = AlbumMedia::where('album_id',$id)->orderBy('id', 'desc')->get();
+        $AlbumMedias = Album::where('id',$id)->orderBy('id', 'desc')->get();
         $data = [];
 
         if($AlbumMedias->isEmpty()){
@@ -74,7 +72,7 @@ class PhotographyController extends Controller
 
         foreach ($AlbumMedias as $Item)
         {
-            $images = json_decode($Item->image);
+            $images = json_decode($Item->multy_images);
             $i = 0;
             foreach ($images as $image)
             {

@@ -146,7 +146,6 @@ return [
         'widgets' => [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'App\\Widgets\\Albums',
-            'App\\Widgets\\AlbumMedias',
             'App\\Widgets\\Films',
             'App\\Widgets\\Contacts',
 //            'TCG\\Voyager\\Widgets\\PostDimmer',
