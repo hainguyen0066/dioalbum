@@ -28,7 +28,8 @@ class ContactController extends Controller
             'facebook'      => setting('contacts.contacts_fb'),
             'youtube'       => setting('contacts.contacts_youtube'),
             'instagram'     => setting('contacts.contacts_insta'),
-            'map'           => setting('contacts.contacts_map')
+            'map'           => setting('contacts.contacts_map'),
+            'contactsBgImage'     => setting('contacts.contacts_bgimage')
         ];
 
         return view('pages.contact',$data);

@@ -12,11 +12,6 @@
                         <div class="fw-portPreview-fadder"></div>
                         <div class="fw-portPreview-content">
                             <h2 class="fw-portPreview-title">{{ $album->name }}</h2>
-                            <div class="block_likes">
-                                <div class="fw-portPreview-views">
-                                   Ngày Chụp {{  date('d-m-Y', strtotime($album->published_at)) }}
-                                </div>
-                            </div>
                         </div>
                     </a>
                 </div>

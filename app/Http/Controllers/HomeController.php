@@ -18,10 +18,10 @@ class HomeController extends Controller
         $albumMedias = Album::select('*')->orderBy('order','DESC')->limit(10)->get();
 
         $albumMedias = $albumMedias->map(function ($item) use ($albumMedias) {
+
             $item->name  = $item['name'];
-            $image = json_decode($item->multy_images)['0'];
-            $item->image = Voyager::image($image);
-            $item->thumb = Voyager::image($item->getThumbnail($image, 'small'));
+            $images = json_decode($item->multy_images);
+            $item->image = $images[0];
 
             return $item;
         });

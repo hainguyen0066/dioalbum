@@ -95,7 +95,7 @@
         </div><!-- .main_wrapper -->
     </div>
 
-    <div class="custom_bg img_bg def_bg"></div>
+    <div class="custom_bg img_bg bg_about" style="background-image: url('/storage/{{ $contactsBgImage ?? '' }}')"></div>
     <script>
         jQuery(document).ready(function(){
             "use strict";

@@ -20,8 +20,7 @@ class PhotographyController extends Controller
             ->get();
 
         $albums = $albums->map(function ($album) {
-            $album->thumb = Voyager::image($album->thumbnail('small', 'image'));
-            $album->image = Voyager::image($album->image);
+            $album->thumb = Voyager::image($album->image);
             return $album;
         });
         $tags = $albums->pluck('tag')->unique();
@@ -77,7 +76,6 @@ class PhotographyController extends Controller
             foreach ($images as $image)
             {
                 $data[$i]['image'] = Voyager::image($image);
-                $data[$i]['thumb'] = Voyager::image($Item->getThumbnail($image, 'small'));
                 $i++;
             }
         }

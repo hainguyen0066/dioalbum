@@ -12,12 +12,6 @@
                             <div class="fw-portPreview-fadder"></div>
                             <div class="fw-portPreview-content">
                                 <h2 class="fw-portPreview-title">{{ $film->name }}</h2>
-                                <div class="block_likes">
-                                    <div class="fw-portPreview-views">
-                                        Ngày Quay {{  date('d-m-Y', strtotime($film->execution_time)) }}
-                                        <Quay></Quay>
-                                    </div>
-                                </div>
                             </div>
                         </a>
                     </div>
