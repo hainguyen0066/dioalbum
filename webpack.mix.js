@@ -11,8 +11,21 @@ const mix = require('laravel-mix');
  |
  */
 mix.copyDirectory('resources/img', 'public/img')
-    .copyDirectory('resources/css', 'public/css')
-    .copyDirectory('resources/js', 'public/js')
+    .css('resources/css/custom.css', 'public/css')
+    .css('resources/css/responsive.css', 'public/css')
+    .css('resources/css/theme.css', 'public/css')
+    .js('resources/js/bootstrap.js', 'public/js')
+    .js('resources/js/jquery.min.js', 'public/js')
+    .js('resources/js/jquery-ui.min.js', 'public/js')
+    .js('resources/js/jquery.countdown.min.js', 'public/js')
+    .js('resources/js/jquery.isotope.min.js', 'public/js')
+    .js('resources/js/modules.js', 'public/js')
+    .js('resources/js/theme.js', 'public/js')
+    .js('resources/js/sorting.js', 'public/js')
     .options({
         processCssUrls: false
     });
+
+if (mix.inProduction()) {
+    mix.version();
+}
