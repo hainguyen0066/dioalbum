@@ -5,24 +5,28 @@
           <div class="modal">
           </div>
             @foreach($albums as $key => $album)
-            <div class="blogpost_preview_fw fw-portPreview element {{ strtolower($album->tag) }}">
-                <div class="fw-portPreview-wrapper mas_style1 pr40 pb40">
-                    <a href="/photography/{{ $album->id }}">
-                        <img src="{{ $album->thumb }}" alt="" class="fw_featured_image" width="540">
+            <div class="blogpost_preview_fw element {{ strtolower($album->tag) }}">
+                <div class="fw-portPreview-wrapper mas_style1 pr40 pb40" >
+                    <div style="position: relative">
+                        <img src="{{ $album->thumb }}" alt="" class="fw_featured_image">
                         <div class="fw-portPreview-fadder"></div>
                         <div class="fw-portPreview-content">
                             <h2 class="fw-portPreview-title">{{ $album->name }}</h2>
                         </div>
-                    </a>
+                        <div class="wrapper-pretyimg">
+                            @if(!empty($album['multy_images']))
+                                @foreach($album['multy_images'] as $key => $image)
+                                    <a class="prety-img featured_ico_link prettyPhoto" href="{{ $image }}"  data-rel="prettyPhoto[{{ $album->id }}]"  title=""></a>
+                                @endforeach
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
             @endforeach
-
             <div class="clear"></div>
         </div>
     </div>
-
-    <div class="custom_bg img_bg def_bg"></div>
 
     <script>
         jQuery(document).ready(function ($) {
@@ -54,7 +58,6 @@
             });
         }
     </script>
-
     <script type="text/javascript" src="https://livewp.site/html/diamond/js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="https://livewp.site/html/diamond/js/sorting.js"></script>
 @endsection

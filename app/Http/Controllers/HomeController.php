@@ -21,7 +21,10 @@ class HomeController extends Controller
 
             $item->name  = $item['name'];
             $images = json_decode($item->multy_images);
-            $item->image = $images[0];
+            if (!empty($images))
+            {
+                $item->image = $images[0];
+            }
 
             return $item;
         });

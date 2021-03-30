@@ -1,7 +1,6 @@
 @extends('pages.main-1')
 @section('content')
     <a href="javascript:void(0)" class="control_toggle"></a>
-    <div class="custom_bg img_bg def_bg"></div>
     <script>
         // Đổ Dữ Liệu Hình Ảnh Ra Ngoài view
         gallery_set = [

@@ -18,9 +18,18 @@ class PhotographyController extends Controller
         $albums = Album::select('*')
             ->orderBy('order','DESC')
             ->get();
-
         $albums = $albums->map(function ($album) {
+            $images = json_decode($album->multy_images);
             $album->thumb = Voyager::image($album->image);
+            $dataImg = [];
+            if (!empty($images))
+            {
+                foreach ($images as $key => $image) {
+                    array_push($dataImg,Voyager::image($image));
+                    $album->multy_images = $dataImg;
+                }
+            }
+
             return $album;
         });
         $tags = $albums->pluck('tag')->unique();
@@ -62,29 +71,7 @@ class PhotographyController extends Controller
      */
     public function show($id)
     {
-        $AlbumMedias = Album::where('id',$id)->orderBy('id', 'desc')->get();
-        $data = [];
 
-        if($AlbumMedias->isEmpty()){
-            return redirect('/photography');
-        }
-
-        foreach ($AlbumMedias as $Item)
-        {
-            $images = json_decode($Item->multy_images);
-            $i = 0;
-            foreach ($images as $image)
-            {
-                $data[$i]['image'] = Voyager::image($image);
-                $i++;
-            }
-        }
-
-        $data = [
-            'AlbumMedia' => $data
-        ];
-
-        return view('pages.album', $data);
     }
 
     /**

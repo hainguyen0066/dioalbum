@@ -180,7 +180,7 @@
                                                 @elseif($row->type == 'text')
                                                     {{--       CUSTOM  TEXT YOUTUBE    --}}
                                                     @if($row->field == 'videourl')
-                                                        {{ 'https://www.youtube.com/watch?v= ' . $data->{$row->field} }}
+                                                        {{ 'https://www.youtube.com/watch?v=' . $data->{$row->field} }}
                                                         @continue
                                                     @endif
                                                     @include('voyager::multilingual.input-hidden-bread-browse')
