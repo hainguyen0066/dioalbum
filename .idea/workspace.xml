@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="commit update&#10; * thêm link cho Tên Album trong acp&#10; * Thêm Modal show images của Flims và Albums&#10; * sửa lại các fiedl thành tiếng việt&#10; * update chỉ sử dụng 1 table Ablum">
+    <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="commit update&#10; * fix lỗi href của thẻ a ở home&#10; * fix arrow in photogra">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PhotographyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PhotographyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/album.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/album.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/photography.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/photography.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/voyager/films/browse.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/voyager/films/browse.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +194,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -216,15 +209,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/vendor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/img" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/resources/views/vendor/voyager/films" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendor" />
     </key>
   </component>
   <component name="RunManager">
@@ -258,7 +251,24 @@
       <workItem from="1616145791363" duration="676000" />
       <workItem from="1616552586061" duration="1805000" />
       <workItem from="1616739472408" duration="3712000" />
-      <workItem from="1617089881657" duration="1569000" />
+      <workItem from="1617089881657" duration="3474000" />
+      <workItem from="1617159998346" duration="5805000" />
+      <workItem from="1617166355908" duration="6233000" />
+      <workItem from="1617176247429" duration="4200000" />
+      <workItem from="1617207649175" duration="992000" />
+      <workItem from="1617265174204" duration="3999000" />
+      <workItem from="1617290013311" duration="544000" />
+      <workItem from="1617298436830" duration="2287000" />
+      <workItem from="1617334000597" duration="2746000" />
+      <workItem from="1617862201030" duration="863000" />
+      <workItem from="1617892222498" duration="1619000" />
+      <workItem from="1620902969434" duration="809000" />
+      <workItem from="1620912693687" duration="327000" />
+      <workItem from="1621325223434" duration="49000" />
+      <workItem from="1635483732623" duration="295000" />
+      <workItem from="1635756440311" duration="282000" />
+      <workItem from="1636372101193" duration="351000" />
+      <workItem from="1636947215925" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1612407093013</created>
@@ -323,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614330498854</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit update&#10; * fix detail photography&#10; * thêm version cho file js và css">
+      <created>1617092331548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617092331548</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit update fix vi tri cac button&#10; * update 3 button mới&#10; * update lại vị trí từng button cho phù hợp hơn">
+      <created>1617334382064</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617334382064</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,36 +361,25 @@
     <MESSAGE value="update gitignore" />
     <MESSAGE value="commit fix multi image cho Album Meidas" />
     <MESSAGE value="commit update&#10; * thêm link cho Tên Album trong acp&#10; * Thêm Modal show images của Flims và Albums&#10; * sửa lại các fiedl thành tiếng việt&#10; * update chỉ sử dụng 1 table Ablum" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit update&#10; * thêm link cho Tên Album trong acp&#10; * Thêm Modal show images của Flims và Albums&#10; * sửa lại các fiedl thành tiếng việt&#10; * update chỉ sử dụng 1 table Ablum" />
+    <MESSAGE value="commit update&#10; * fix detail photography&#10; * thêm version cho file js và css" />
+    <MESSAGE value="commit update fix vi tri cac button&#10; * update 3 button mới&#10; * update lại vị trí từng button cho phù hợp hơn" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit update fix vi tri cac button&#10; * update 3 button mới&#10; * update lại vị trí từng button cho phù hợp hơn" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613982910070">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup" timestamp="1636947618469">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state x="448" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.790@0.25.1440.790" timestamp="1613982910070" />
-    <state x="491" y="25" key="CommitChangelistDialog2" timestamp="1617089239302">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="491" y="25" key="CommitChangelistDialog2/0.25.1440.790@0.25.1440.790" timestamp="1617089239302" />
-    <state x="0" y="90" width="1438" height="660" key="DiffContextDialog" timestamp="1617088232147">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="0" y="90" width="1438" height="660" key="DiffContextDialog/0.25.1440.790@0.25.1440.790" timestamp="1617088232147" />
-    <state x="229" y="56" key="SettingsEditor" timestamp="1614310043886">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="229" y="56" key="SettingsEditor/0.25.1440.790@0.25.1440.790" timestamp="1614310043886" />
-    <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612406662229">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="540" y="76" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.25.1440.790@0.25.1440.790" timestamp="1612406662229" />
-    <state x="422" y="130" width="595" height="580" key="find.popup" timestamp="1614325613477">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="422" y="130" width="595" height="580" key="find.popup/0.25.1440.790@0.25.1440.790" timestamp="1614325613477" />
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup" timestamp="1617091627541">
-      <screen x="0" y="25" width="1440" height="790" />
-    </state>
-    <state x="385" y="139" width="670" height="676" key="search.everywhere.popup/0.25.1440.790@0.25.1440.790" timestamp="1617091627541" />
+    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup/0.25.1440.801@0.25.1440.801" timestamp="1636947618469" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/contact.blade.php</url>
+          <line>113</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
