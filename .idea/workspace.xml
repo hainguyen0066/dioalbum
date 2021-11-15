@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="commit update&#10; * fix lỗi href của thẻ a ở home&#10; * fix arrow in photogra">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/album.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/album.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="b3583aef-9926-4692-aa5d-35e9749b3f93" name="Default Changelist" comment="commit update&#10; * fix lỗi href của thẻ a ở home&#10; * fix arrow in photogra" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,6 +263,7 @@
       <workItem from="1635756440311" duration="282000" />
       <workItem from="1636372101193" duration="351000" />
       <workItem from="1636947215925" duration="433000" />
+      <workItem from="1636947658057" duration="519000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1612407093013</created>
