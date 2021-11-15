@@ -39,10 +39,10 @@
     </div>
 </header>
 
-<script type="text/javascript" src="{{ asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('js/jquery-ui.min.js')}}"></script>
-<script type="text/javascript" src="{{ asset('js/modules.js')}}"></script>
-<script type="text/javascript" src="{{ asset('js/theme.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.min.js')}}?v={{ config('diamond.asset.version') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery-ui.min.js')}}?v={{ config('diamond.asset.version') }}"></script>
+<script type="text/javascript" src="{{ asset('js/modules.js')}}?v={{ config('diamond.asset.version') }}"></script>
+<script type="text/javascript" src="{{ asset('js/theme.js')}}?v={{ config('diamond.asset.version') }}"></script>
 @if(!Request::is('films'))
-    <script type="text/javascript" src="{{ asset('js/fs_gallery.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/fs_gallery.js')}}?v={{ config('diamond.asset.version') }}"></script>
 @endif

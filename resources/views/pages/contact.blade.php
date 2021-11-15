@@ -58,19 +58,19 @@
                                                     <li class="contact_info_item">
                                                         <div class="contact_info_wrapper">
                                                             <span class="contact_info_icon"><i class="fab fa-facebook-f"></i></span>
-                                                            <div class="contact_info_text"><a href="{{ $facebook ?? '' }}">facebook</a></div>
+                                                            <div class="contact_info_text"><a target="_blank" href="{{ $facebook ?? '' }}">facebook</a></div>
                                                         </div>
                                                     </li>
                                                     <li class="contact_info_item">
                                                         <div class="contact_info_wrapper">
                                                             <span class="contact_info_icon"><i class="fab fa-youtube"></i></span>
-                                                            <div class="contact_info_text"><a href="{{ $youtube ?? '' }}">youtube</a></div>
+                                                            <div class="contact_info_text"><a target="_blank" href="{{ $youtube ?? '' }}">youtube</a></div>
                                                         </div>
                                                     </li>
                                                     <li class="contact_info_item">
                                                         <div class="contact_info_wrapper">
                                                             <span class="contact_info_icon"><i class="fab fa-instagram"></i></span>
-                                                            <div class="contact_info_text"><a href="{{ $instagram ?? '' }}">instagram</a></div>
+                                                            <div class="contact_info_text"><a target="_blank" href="{{ $instagram ?? '' }}">instagram</a></div>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -95,7 +95,7 @@
         </div><!-- .main_wrapper -->
     </div>
 
-    <div class="custom_bg img_bg def_bg"></div>
+    <div class="custom_bg img_bg bg_about" style="background-image: url('/storage/{{ $contactsBgImage ?? '' }}')"></div>
     <script>
         jQuery(document).ready(function(){
             "use strict";

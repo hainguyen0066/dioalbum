@@ -16,3 +16,4 @@ mix.copyDirectory('resources/img', 'public/img')
     .options({
         processCssUrls: false
     });
+

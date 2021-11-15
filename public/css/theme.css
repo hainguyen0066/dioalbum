@@ -1121,7 +1121,7 @@ a.fs_slider_next:before {
 
 .fs_thmb_viewport .fs_thmb_list li img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .fs_thmb_viewport .fs_thmb_list li.video_thmb img {
@@ -4304,7 +4304,6 @@ article.contentarea.sp_contentarea {
 
 .fullscreen_block .fw-portPreview {
     width:calc(25% - 1px);
-    float: left;
 }
 
 .fw_port_module2 .fw-portPreview {
